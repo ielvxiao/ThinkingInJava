@@ -1,0 +1,1 @@
+THINKING IN JAVA 5.7.2 静态数据的初始化
