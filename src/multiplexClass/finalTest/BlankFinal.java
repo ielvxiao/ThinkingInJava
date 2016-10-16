@@ -22,5 +22,10 @@ public class BlankFinal {
     public static void main(String[] args) {
         new BlankFinal();
         new BlankFinal(47);
+        final StringBuffer sb=new StringBuffer();
+        sb.append("asdfsa");
+        System.out.println(sb);
+        sb.append("添加");
+        System.out.println(sb);
     }
 }
