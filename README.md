@@ -1,2 +1,2 @@
 # ThinkingInJava
-##staticpractice包里是静态数据的初始化的小例子
+##自学JAVA的一些练习。有点命名是练习的名字，有点命名是THINKING IN JAVA 4中的页数。

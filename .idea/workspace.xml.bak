@@ -5,7 +5,8 @@
     <list default="true" id="c700a449-93d0-4f2a-b1ad-de63ed460737" name="Default" comment="复用类练习">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/multiplexClass/abstractAndInterface/抽象方法和接口.txt" afterPath="$PROJECT_DIR$/src/multiplexClass/abstractAndInterface/抽象方法和接口.txt" />
 
-   
+    <list default="true" id="3bcc7341-03a0-483c-a698-ce8e4531bf15" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 
     </list>
     <ignored path="ThinkingInJava.iws" />
