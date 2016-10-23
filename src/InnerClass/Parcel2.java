@@ -3,7 +3,7 @@ package InnerClass;
 /**
  * Created by Administrator on 2016/10/19.
  */
-public class Parcel2 {
+public class Parcel2 {   //生成的.class文件里。有Parcel2.class 也有Parcel2$Contents.class这样的。。其中$代表Contents在Parcel2中
     class Contents{
         private int i =11;
         public int value(){return i;}
