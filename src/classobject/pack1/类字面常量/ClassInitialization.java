@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Created by Administrator on 2016/10/25.
  */
-public class ClassInitialization {
+public class ClassInitialization{
     public static Random rand=new Random(47);
 
 
@@ -18,6 +18,9 @@ public class ClassInitialization {
         System.out.println("After creating Initable3 ref");
         Class init=Class.forName("classobject.pack1.类字面常量.Initable3"); //要加上包名，为了产生Class引用，所以就要立刻进行初始化
         Initable2 i=new Initable2();
+        System.out.println(Initable.class);//.class代表的就是它所指向的对象的确切类型
+        System.out.println(Integer.class+"aaaaaa"+int.class); //两个类型其实是相同的
+        System.out.println(Number.class);
     }
     /*
     如果一个static域不是final的，那么对他访问的时候，总是要求在读取他之前，要先进行链接（为这个域分配空间）和初始化（初始化该存储空间）。
