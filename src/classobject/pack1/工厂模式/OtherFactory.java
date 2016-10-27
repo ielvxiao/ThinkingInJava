@@ -14,7 +14,7 @@ public class OtherFactory {
 class init{
     public static Properties getPro() throws FileNotFoundException, IOException{
         Properties pro=new Properties();
-        File f=new File("fruit.properties");
+        File f=new File("Resources/test.properties");
         if(f.exists()){
             pro.load(new FileInputStream(f));
         }else{
