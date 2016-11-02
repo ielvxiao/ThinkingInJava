@@ -19,7 +19,7 @@ public class IceCream {
             int t;
             do {
                 t=rand.nextInt(FLAVORS.length);
-            }while (picked[i]);
+            }while (picked[t]);
             results[i]=FLAVORS[t];
             picked[t]=true;
         }
