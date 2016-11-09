@@ -107,6 +107,8 @@ BufferedReader则是比InputStreamReader更高级,
         }
     }
 
+
+
     public static void main(String[] args) {
         File file =new File("C:\\a.txt");
         testInputStream(file);
@@ -114,5 +116,16 @@ BufferedReader则是比InputStreamReader更高级,
         testInputStreamReader(file);
         System.out.println("=================================");
         testBufferedReader(file);
+//        try {
+//            FileInputStream in = new FileInputStream(file);
+//            byte[] b=new byte[in.available()];
+//            int i ;
+//            while ((i=in.read(b,0,b.length)) !=-1){
+//                System.out.println(new String(b,"utf8"));
+//            }
+//            in.close();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 }
