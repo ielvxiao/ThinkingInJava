@@ -84,7 +84,7 @@ class Entrance implements Runnable {
 public class OrnamentalGarden {
     public static void main(String[] args) throws Exception {
         ExecutorService exec = Executors.newCachedThreadPool();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 6; i++) {
             exec.execute(new Entrance(i));
         }
         TimeUnit.SECONDS.sleep(3);
