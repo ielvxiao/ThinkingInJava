@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="513ed33f-b476-43fe-a461-7953b7c1b6da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/thread/threadCooperation/PipedIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/thread/threadCooperation/TaostOmatic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/thread/deadlock/Chopstick.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/thread/threadCooperation/PipedIO.java" afterPath="$PROJECT_DIR$/src/thread/threadCooperation/PipedIO.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,16 +48,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PipedIO.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PipedIO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/thread/threadCooperation/PipedIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+            <state relative-caret-position="201">
+              <caret line="50" column="70" lean-forward="true" selection-start-line="50" selection-start-column="70" selection-end-line="50" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#506#507#0" expanded="true" />
                 <element signature="e#532#533#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chopstick.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/thread/deadlock/Chopstick.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,7 +89,11 @@
       <find>SleepBlocked</find>
       <find>Waiting for read()</find>
       <find>shutdownNow</find>
+      <find>Riceiver</find>
     </findStrings>
+    <replaceStrings>
+      <replace>Receiver</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,6 +155,8 @@
         <option value="$PROJECT_DIR$/src/thread/threadCooperation/TestBlockingQueues.java" />
         <option value="$PROJECT_DIR$/src/thread/threadCooperation/TaostOmatic.java" />
         <option value="$PROJECT_DIR$/src/thread/threadCooperation/PipedIO.java" />
+        <option value="$PROJECT_DIR$/src/thread/deadlock.java" />
+        <option value="$PROJECT_DIR$/src/thread/deadlock/Chopstick.java" />
       </list>
     </option>
   </component>
@@ -247,60 +263,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="threadCooperation" />
+              <option name="myItemId" value="deadlock" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ThinkingInJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ThinkingInJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thread" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadCooperation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaostOmatic.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ThinkingInJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ThinkingInJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thread" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadCooperation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PipedIO.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -850,7 +814,7 @@
       <workItem from="1488955165022" duration="2451000" />
       <workItem from="1488959180768" duration="9694000" />
       <workItem from="1489021558037" duration="2807000" />
-      <workItem from="1489027288768" duration="13973000" />
+      <workItem from="1489027288768" duration="15104000" />
     </task>
     <task id="LOCAL-00001" summary="导入项目">
       <created>1488165553237</created>
@@ -978,11 +942,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489048849978</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="sender创建一个单独的对象PipedWriter然后PipedReader需要和它相关联，如果在read的时候如果没有数据，管道将自动阻塞">
+      <created>1489052836901</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1489052836901</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83586000" />
+    <option name="totallyTimeSpent" value="84717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -997,7 +968,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22643554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22643554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41061756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31217483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1062,7 +1033,8 @@
     <MESSAGE value="当调用notify和notifyAll的时候他们只唤醒等待这个特定锁的任务。" />
     <MESSAGE value="生产者与消费者" />
     <MESSAGE value="生产者与消费者队列。解决了多线程中高效安全传输数据的问题。在使用这些队列的时候我们不用担心什么时候需要阻塞线程，什么时候需要唤醒线程，队列都可以一手包办" />
-    <option name="LAST_COMMIT_MESSAGE" value="生产者与消费者队列。解决了多线程中高效安全传输数据的问题。在使用这些队列的时候我们不用担心什么时候需要阻塞线程，什么时候需要唤醒线程，队列都可以一手包办" />
+    <MESSAGE value="sender创建一个单独的对象PipedWriter然后PipedReader需要和它相关联，如果在read的时候如果没有数据，管道将自动阻塞" />
+    <option name="LAST_COMMIT_MESSAGE" value="sender创建一个单独的对象PipedWriter然后PipedReader需要和它相关联，如果在read的时候如果没有数据，管道将自动阻塞" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1075,14 +1047,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///opt/jdk1.8.0_121/src.zip!/java/util/concurrent/locks/ReentrantLock.java" />
-    <entry file="file://$PROJECT_DIR$/src/thread/AttemptLocking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/thread/MutexEvenGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1397,13 +1361,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/thread/threadCooperation/PipedIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        <state relative-caret-position="201">
+          <caret line="50" column="70" lean-forward="true" selection-start-line="50" selection-start-column="70" selection-end-line="50" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#506#507#0" expanded="true" />
             <element signature="e#532#533#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thread/deadlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thread/deadlock/Chopstick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

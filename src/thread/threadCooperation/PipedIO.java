@@ -37,10 +37,10 @@ class Sender implements Runnable {
     }
 }
 
-class Riceiver implements Runnable {
+class Receiver implements Runnable {
     private PipedReader in;
 
-    public Riceiver(Sender sender) throws IOException {
+    public Receiver(Sender sender) throws IOException {
         in = new PipedReader(sender.getPipedWriter());
     }
 
@@ -58,10 +58,10 @@ class Riceiver implements Runnable {
 public class PipedIO {
     public static void main(String[] args) throws Exception {
         Sender sender = new Sender();
-        Riceiver riceiver = new Riceiver(sender);
+        Receiver Receiver = new Receiver(sender);
         ExecutorService exec = Executors.newCachedThreadPool();
         exec.execute(sender);
-        exec.execute(riceiver);
+        exec.execute(Receiver);
         TimeUnit.SECONDS.sleep(4);
         exec.shutdown();
     }
