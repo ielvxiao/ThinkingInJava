@@ -1,5 +1,7 @@
 package algorithms.section_3;
 
+import java.util.Queue;
+
 /**
  * @author Administrator
  * @date 2017/3/17
@@ -112,7 +114,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     public void delete(Key key) {
-
+        root = delete(root, key);
     }
     private Node delete(Node x, Key key) {
         //删除指定节点
@@ -131,4 +133,33 @@ public class BST<Key extends Comparable<Key>, Value> {
         x.N = size(x.left) + size(x.right) + 1;
         return x;
     }
+
+//    public Iterable<Key> keys() {
+//
+//    }
+//    public Iterable<Key> kyes(Key lo, Key hi) {
+//        Queue<Key> queue = new Queue<Key>();
+//
+//    }
+//    public void keys(Node x, Queue<Key> queue, Key lo, Key hi) {
+//        if (x == null)  return;
+//        int cmplo = lo.compareTo(x.key);
+//        int cmphi = hi.compareTo(x.key);
+//        if (cmplo < 0)  keys(x.left, queue, lo, hi);
+//        if (cmplo <=0 && cmphi >=0) queue.add(x.key);
+//        if (cmphi > 0)  keys(x.right, queue, lo, hi);
+//    }
+public static void main(String[] args) {
+    BST b = new BST();
+   b.put("S", "S");
+   b.put("X", "X");
+   b.put("E", "E");
+   b.put("A", "A");
+   b.put("C", "C");
+   b.put("R", "R");
+   b.put("H", "H");
+   b.put("M", "M");
+   b.delete("E");
+   System.out.println(b.size());
+}
 }
